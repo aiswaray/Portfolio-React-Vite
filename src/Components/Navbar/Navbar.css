@@ -1,0 +1,105 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:20px 130px;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style:none;
+    font: size 20px;
+    font-family: "Outfit", sans-serif;
+}
+.nav-menu li {
+    transition: 0.8s;
+    cursor: pointer;
+} 
+.nav-menu li:hover {
+    transform: scale(0.3s);
+    font-size: 18px;
+}
+.nav-connect {
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #e7d514f6 0.36%, #f419e9 102.36%);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.anchor-link {
+    position: relative;
+    cursor: pointer; 
+  }
+  
+  .anchor-link:hover .anchor-link-icon {
+    display: block; 
+  }
+  
+  .anchor-link-icon {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translate(0, -50%); 
+  }
+  .nav-close-button {
+    display: none;
+  }
+  .nav-mob-open {
+    display: none;
+  }
+
+  @media(max-width:768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+    .nav-connect {
+        display: none;
+    }
+    .nav-mob-open {
+        display: block;
+        /* position: fixed; */
+        right: 30px;
+        font-size: 30px;
+    }
+    .nav-close-button {
+        position: relative;
+        display: block;
+        top: 16px;
+        right: 115px;
+        width: 50px;
+        font-size:32px;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        gap: 30px;
+        background-color: #1f0016;
+        width: 300px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right:-300px;
+    }
+    .nav-menu li {
+        font-size:20px;
+        flex-direction: row;
+        gap: 20px;
+        font-weight:500;
+    }
+
+
+  }

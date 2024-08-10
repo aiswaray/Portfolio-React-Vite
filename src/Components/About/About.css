@@ -1,0 +1,134 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin:50px 120px;
+}
+.about-title {
+    position: relative;
+}
+.about-title h1 {
+    padding: 0px 20px;
+    font-size: 50px;
+    font-weight:600;
+}
+.about-section {
+    display: flex;
+    gap: 50px;
+}
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.abot-para {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about-skill {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+}
+.about-skill:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.about-skill p {
+    min-width: 150px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.about-skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 6px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #e7d514f6 0.36%, #f419e9 102.36%);
+}
+.about-achievments {
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    margin-bottom: 60px;
+}
+.about-achievment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+.about-achievment h1 {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(267deg, #e7d514f6 0.36%, #f419e9 102.36%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-achievment p {
+    font-size: 18px;
+    font-weight: 400;
+}
+.about-achievment:hover {
+    transform: scale(1.12);
+    transition: 0.5s;
+}
+
+
+@media (max-width:768px) {
+    .about {
+        gap: 30px;
+        margin: 50px 30px;
+        align-items: start;
+    }
+    .about-title h1 {
+        font-size: 50px;
+        padding: 0;
+    }
+    .about-section {
+        flex-direction: column;
+    }
+    .about-left {
+        display: none;
+    }
+    .abot-para {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .about-skills {
+        gap: 20px;
+    }
+    .about-skills p {
+        font-size: 16px;
+    }
+    .about-skills hr {
+        height: 5px;
+    }
+    .about-achievments {
+        justify-content: space-between;
+    }
+    .about-achievments h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .about-achievments p {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+}
